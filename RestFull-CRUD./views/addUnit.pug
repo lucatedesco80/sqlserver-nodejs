@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    li
+      a.active(href='../') Elenco Unità
+    li
+      a(href='/') Nuova Unità 
+  br
+  form(method='POST' action='/addUnit/add')
+    div  
+      label(for='Unit') Unit:
+      br
+      input(type='text', placeholder='Unit name' name='Unit')
+    div  
+      label(for='Cost') Cost:
+      br
+      input(type='text', placeholder='xy' name='Cost')
+    div  
+      label(for='Hit_Speed') Hit speed:
+      br
+      input(type='text', placeholder='xy sec' name='Hit_Speed')
+    div  
+      label(for='Speed') Speed:
+      br
+      input(type='text', placeholder='Medium (xy)' name='Speed')
+    div  
+      label(for='Deploy_Time') Deploy Time:
+      br
+      input(type='text', placeholder='xy sec' name='Deploy_Time')
+    div  
+      label(for='Range') Range:
+      br
+      input(type='text', placeholder='x.y' name='Range')
+    div  
+      label(for='Target') Target:
+      br
+      input(type='text', placeholder='Air' name='Target')
+    div  
+      label(for='Count') Count:
+      br
+      input(type='text', placeholder='x4' name='Count')
+    div  
+      label(for='Transport') Transport:
+      br
+      input(type='text', placeholder='Air' name='Transport')
+    div  
+      label(for='Type') Type:
+      br
+      input(type='text', placeholder='Troop' name='Type')
+    div  
+      label(for='Rarity') Rarity:
+      br
+      input(type='text', placeholder='Epic' name='Rarity')
+    button(type='submit') Invia

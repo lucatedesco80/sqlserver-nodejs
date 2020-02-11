@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    li
+      a.active(href='../') Elenco Unità
+    li
+      a(href='../addUnit') Nuova Unità
+  br
+  img(src=`/Clash/${re.Unit}.png`)
+  h1 Unit: #{re.Unit}
+  h1 Cost: #{re.Cost}    
+  h1 Hit_Speed: #{re.Hit_Speed}
+  h1 Speed: #{re.Speed}
+  h1 Deploy_Time: #{re.Deploy_Time}
+  h1 Range: #{re.Range}
+  h1 Target: #{re.Target}
+  h1 Count: #{re.Count}
+  h1 Transport: #{re.Transport}
+  h1 Type: #{re.Type}
+  h1 Rarity: #{re.Rarity}
+  br
